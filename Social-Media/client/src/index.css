@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background-color: #22c48b;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+  transition: background-color 300ms, transform 200ms;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btn:hover {
+  transition: 0.5s;
+  background-color: #33e4a6;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  background-color: gray !important;
+  cursor: not-allowed;
+}
